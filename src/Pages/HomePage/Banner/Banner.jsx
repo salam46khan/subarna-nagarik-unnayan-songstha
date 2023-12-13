@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     const settings = {
-        dots: true,
+        
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -31,7 +31,7 @@ const Banner = () => {
                         <img className="w-full" src={bannerThree} alt="" />
                     </div>
                 </Slider>
-                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 flex justify-center items-center">
+                <div className="absolute top-0 left-0 w-full h-full bg-blue-800 bg-opacity-40 flex justify-center items-center">
                     <div className="container mx-auto border text-white text-center">
                         hi
                     </div>
