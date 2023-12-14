@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        normalText: ['Libre Bodoni', 'serif']
+        normalText: ['Libre Bodoni', 'serif'],
+        titleText: ['Shrikhand', 'serif']
       }
     },
   },
