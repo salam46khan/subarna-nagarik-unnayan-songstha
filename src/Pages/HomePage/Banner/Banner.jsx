@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     const settings = {
-        
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
