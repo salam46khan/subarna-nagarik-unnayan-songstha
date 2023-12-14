@@ -1,0 +1,6 @@
+.error{
+    background:linear-gradient(30deg, #0008, #4c0adbb1), url(../../assets/error.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
