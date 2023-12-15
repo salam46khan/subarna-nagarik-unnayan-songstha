@@ -1,18 +1,19 @@
 import { FaBars } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/subarna-nagarik-unnayan-songstha.jpg'
+import { AiOutlineUser } from "react-icons/ai";
 
 const Header = () => {
     const navItems = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/about Us'}>About Us</NavLink></li>
+        <li><NavLink to={'/about'}>About Us</NavLink></li>
         <li><NavLink to={'/service'}>Service</NavLink></li>
         <li><NavLink to={'/event'}>Event</NavLink></li>
         <li><NavLink to={'/blog'}>Blog</NavLink></li>
-        <li><NavLink to={'/Contact Us'}>Contact Us</NavLink></li>
+        <li><NavLink to={'/Contact'}>Contact Us</NavLink></li>
     </>
     return (
-        <div className="bg-[#05418A] text-white">
+        <div className="bg-[#05418A] text-white fixed top-0 left-0 z-50 w-full shadow-lg shadow-[#fff6]">
             <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -23,11 +24,17 @@ const Header = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <div>
+                    <div className="md:navbar-start navbar-center md:block hidden">
                         <Link to={'/'}>
                             <img className="h-12" src={logo} alt="" />
                         </Link>
                     </div>
+                </div>
+
+                <div className="block md:hidden navbar-center">
+                    <Link to={'/'}>
+                        <img className="h-12" src={logo} alt="" />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -35,7 +42,9 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to={'/login'} className="text-white text-3xl">
+                        <AiOutlineUser />
+                    </Link>
                 </div>
             </div>
         </div>

@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         normalText: ['Libre Bodoni', 'serif'],
-        titleText: ['Shrikhand', 'serif']
+        titleText: ['Shrikhand', 'serif'],
+        mainText: ['Young Serif', 'serif']
       }
     },
   },
