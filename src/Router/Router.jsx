@@ -5,6 +5,7 @@ import Donate from "../Pages/Donate/Donate";
 import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/Login/SignUp";
+import About from "../Pages/About/About";
 
 const Router = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <p>All about is running well</p>
+                element: <About></About>
             },
             {
                 path: '/donate',

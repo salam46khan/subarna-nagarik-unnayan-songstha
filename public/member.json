@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "img": "https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8",
+        "designation": "Software Engineer"
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "UX Designer"
+    },
+    {
+        "id": 3,
+        "name": "Charlie Brown",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "Marketing Specialist"
+    },
+    {
+        "id": 4,
+        "name": "David Miller",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "Data Analyst"
+    },
+    {
+        "id": 5,
+        "name": "Eva Davis",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "Product Manager"
+    },
+    {
+        "id": 6,
+        "name": "Frank Wilson",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "Graphic Designer"
+    },
+    {
+        "id": 7,
+        "name": "Grace Lee",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "Financial Analyst"
+    },
+    {
+        "id": 8,
+        "name": "Henry Taylor",
+        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
+        "designation": "HR Coordinator"
+    }
+]
