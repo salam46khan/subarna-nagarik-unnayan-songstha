@@ -1,6 +1,7 @@
 import AboutSec from "../AboutSec/AboutSec";
 import Banner from "../Banner/Banner";
 import FoundingSec from "../FoundingSec/FoundingSec";
+import StoriesSec from "../Stories/StoriesSec";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <Banner></Banner>
             <AboutSec></AboutSec>
             <FoundingSec></FoundingSec>
+            <StoriesSec></StoriesSec>
         </div>
     );
 };

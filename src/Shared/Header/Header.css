@@ -1,0 +1,43 @@
+
+#navItems ul li a{
+    border: 1px solid;
+    border-radius: 0%;
+    margin: 0 3px;
+    font-weight: 600;
+    transition: 0.3s;
+    overflow: hidden;
+    /* height: 20px; */
+}
+#navItems ul li a:hover{
+    position: relative;
+    z-index: 1;
+    color: #05418A;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+#navItems ul li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    height: 0px;
+    width: 0;
+    background: #fff;
+    z-index: -1;
+    transition:ease-in-out 0.3s;
+    overflow: hidden;
+    
+}
+#navItems ul li a:hover:after{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#navItems ul li a.active{
+    border: 1px solid #fff;
+    background: #fff;
+    color: #05418A;
+}
+
