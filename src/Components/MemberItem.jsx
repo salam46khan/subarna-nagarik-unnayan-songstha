@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 const MemberItem = ({ itme }) => {
     const { img, name, designation } = itme;
-    console.log(itme, img);
+    // console.log(itme, img);
 
     return (
         <div className=" bg-[#fff4] my-5 shadow-md  shadow-[#000b] rounded w-[280px] mx-auto py-10">
