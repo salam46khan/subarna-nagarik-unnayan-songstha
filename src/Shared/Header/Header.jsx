@@ -6,10 +6,12 @@ import './Header.css'
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FiLogOut } from "react-icons/fi";
+import useIdentity from "../../hooks/useIdentity";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext)
     // console.log(user);
+    const [identity] = useIdentity()
 
     const handleLogOut = () => {
         logOut()
@@ -25,7 +27,12 @@ const Header = () => {
         <li><NavLink to={'/about'}>About Us</NavLink></li>
         <li><NavLink to={'/service'}>Service</NavLink></li>
         <li><NavLink to={'/story'}>Success Story</NavLink></li>
-        <li><NavLink to={'/Contact'}>Contact Us</NavLink></li>
+        <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
+        <li><NavLink to={'/donate'}>Donate Us</NavLink></li>
+        {
+            identity?.admin ? <li><NavLink to={'/dashboard/home'}>Dashboard</NavLink></li> : ''
+        }
+        
     </>
     return (
         <div className="bg-[#05418A] text-white fixed top-0 left-0 z-50 w-full shadow-lg shadow-[#fff6]">

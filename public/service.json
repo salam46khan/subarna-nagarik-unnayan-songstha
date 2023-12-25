@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "icon": "https://i.ibb.co/hRhZ0CK/balance.gif",
+        "service": "Advocacy and Rights Awareness----"
+    },
+    {
+        "id":2,
+        "icon": "https://i.ibb.co/0rPTN5H/read.gif",
+        "service": "Educational Support Services"
+    },
+    {
+        "id":3,
+        "icon": "https://i.ibb.co/6rFxWrq/family.gif",
+        "service": "Rehabilitation Services"
+    },
+    {
+        "id":4,
+        "icon": "https://i.ibb.co/dQpxfWR/wheelchair.gif",
+        "service": "Accessibility Advocacy"
+    },
+    {
+        "id":5,
+        "icon": "https://i.ibb.co/wBNhK6z/lecture-room.gif",
+        "service": "Living Skills Training"
+    },
+    {
+        "id":6,
+        "icon": "https://i.ibb.co/sR6jrRw/healthcare.gif",
+        "service": "Health and Wellness Initiatives"
+    },
+    {
+        "id":7,
+        "icon": "https://i.ibb.co/nQFYPLG/cashier.gif",
+        "service": "Employment Placement Assistance"
+    },
+    {
+        "id":8,
+        "icon": "https://i.ibb.co/2KJfpf6/trial.gif",
+        "service": "Legal Aid and Support"
+    }
+]

@@ -1,50 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Alice Johnson",
-        "img": "https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8",
-        "designation": "Software Engineer"
+        "name": "Md Salam Ali",
+        "img": "https://i.ibb.co/WH6d8bw/samad.png",
+        "designation": "president"
     },
     {
         "id": 2,
-        "name": "Bob Smith",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "UX Designer"
+        "name": "Forhad Reza",
+        "img": "https://i.ibb.co/Jc3DDL2/forhad.png",
+        "designation": "CEO"
     },
     {
         "id": 3,
-        "name": "Charlie Brown",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "Marketing Specialist"
+        "name": "Aser Ali",
+        "img": "https://i.ibb.co/HDs8bb8/asar.png",
+        "designation": "Treasurer"
     },
     {
         "id": 4,
-        "name": "David Miller",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "Data Analyst"
+        "name": "Abdus Salam",
+        "img": "https://i.ibb.co/ByDm5Hv/salam-2.png",
+        "designation": "Member"
     },
     {
         "id": 5,
-        "name": "Eva Davis",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "Product Manager"
+        "name": "Hasina Previn",
+        "img": "https://i.ibb.co/C8YPwgd/team-no-photo-01.jpg",
+        "designation": "Co-President"
     },
     {
         "id": 6,
-        "name": "Frank Wilson",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "Graphic Designer"
+        "name": "Masud Raihan",
+        "img": "https://i.ibb.co/LNp4L0h/masud.png",
+        "designation": "Member"
     },
     {
         "id": 7,
-        "name": "Grace Lee",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "Financial Analyst"
-    },
-    {
-        "id": 8,
-        "name": "Henry Taylor",
-        "img": "https://i.ibb.co/v1CNRnF/16300308-1833924896845855-517510373790378964-o.jpg",
-        "designation": "HR Coordinator"
+        "name": "Md Mohibullah",
+        "img": "https://i.ibb.co/Bt7tB6r/mohi.png",
+        "designation": "Member"
     }
 ]

@@ -5,14 +5,14 @@ import { useQuery } from '@tanstack/react-query';
 const useStory = () => {
     const axiosPublic = useAxiosPublic()
     
-    const { refetch, data: story = [] } = useQuery({
-        queryKey: ['story'],
+    const {refetch, data: succStory = [] } = useQuery({
+        queryKey: ['news'],
         queryFn: async () => {
             const res = await axiosPublic.get(`/story`)
-            return res.data.data
+            return res.data
         }
     })
-    return [ refetch, story]
+    return [succStory, refetch]
 
 };
 

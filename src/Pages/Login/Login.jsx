@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Pageheader from "../../Shared/Pageheader/Pageheader";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import GoogleLogin from "./GoogleLogin";
 
 const Login = () => {
     const [error, setError] = useState('');
@@ -58,8 +59,10 @@ const Login = () => {
 
                             <input className="btn btn-primary" type="submit" value="LogIn" />
                         </div>
+                        <div className="divider">OR</div>
+                        <GoogleLogin></GoogleLogin>
                     </form>
-                    <div className="divider">OR</div>
+                    
                     <div className="px-8">
                         {/* <GoogleLogin></GoogleLogin> */}
                     </div>

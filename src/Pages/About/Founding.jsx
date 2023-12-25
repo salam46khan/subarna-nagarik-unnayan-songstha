@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MemberItem from "../../Components/MemberItem";
 import Slider from "react-slick";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Founding = () => {
     const [members, setMembers] = useState([]);
-    useEffect(() => {
-        fetch('member.json')
-            .then(res => res.json())
-            .then(data => setMembers(data))
-    }, [])
+
+    const axiosPublic = useAxiosPublic()
+    axiosPublic.get('/member')
+        .then(res => {
+            setMembers(res.data)
+        })
 
     const settings = {
         infinite: true,

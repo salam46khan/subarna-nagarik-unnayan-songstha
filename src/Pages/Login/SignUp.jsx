@@ -3,12 +3,14 @@ import Pageheader from "../../Shared/Pageheader/Pageheader";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import GoogleLogin from "./GoogleLogin";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const SignUp = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate()
     const location = useLocation()
-    // const axiosPublic = useAxiosPublic()
+    const axiosPublic = useAxiosPublic()
     const { createUser } = useContext(AuthContext)
 
     const handleSignUp = async (event) => {
@@ -21,22 +23,22 @@ const SignUp = () => {
         // console.log(name, email, password);
         const user = { name, email, password }
         console.log(user);
-        // if (!/[$#@%&*]/.test(password)) {
-        //     setError('do not have a special character')
-        //     return
-        // }
-        // if (password.length < 6) {
-        //     setError('is less than 6 characters')
-        //     return
-        // }
-        // if (!/[A-Z]/.test(password)) {
-        //     setError('do not have a capital letter')
-        //     return
-        // }
-        // if (!/[0-9]/.test(password)) {
-        //     setError('do not have a numeric characte')
-        //     return
-        // }
+        if (!/[$#@%&*]/.test(password)) {
+            setError('do not have a special character')
+            return
+        }
+        if (password.length < 6) {
+            setError('is less than 6 characters')
+            return
+        }
+        if (!/[A-Z]/.test(password)) {
+            setError('do not have a capital letter')
+            return
+        }
+        if (!/[0-9]/.test(password)) {
+            setError('do not have a numeric characte')
+            return
+        }
 
         createUser(email, password)
             .then(result => {
@@ -45,13 +47,13 @@ const SignUp = () => {
                     displayName: name,
                     // photoURL: imgURL
                 })
-                // const userInfo = {
-                //     name, email
-                // }
-                // axiosPublic.post('/users', userInfo)
-                // .then(res => {
-                //     console.log(res.data);
-                // })
+                const userInfo = {
+                    name, email
+                }
+                axiosPublic.post('/users', userInfo)
+                .then(res => {
+                    console.log(res.data);
+                })
                 navigate(location.state ? location.state : '/')
             })
             .catch(error => {
@@ -95,10 +97,12 @@ const SignUp = () => {
 
                                 <input className="btn btn-primary" type="submit" value="Sign up" />
                             </div>
+                            <div className="divider">OR</div>
+                            <GoogleLogin></GoogleLogin>
                         </form>
-                        <div className="divider">OR</div>
+                        
                         <div className="px-8">
-                            {/* <GoogleLogin></GoogleLogin> */}
+                            
 
                         </div>
                         <div className="text-center mt-4">
